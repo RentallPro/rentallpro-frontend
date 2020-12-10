@@ -1,0 +1,21 @@
+.sign-up {
+    background: #D3EAF8;
+    background-image: url(../../assets/Patern.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    width: 100%;
+    height: 100vh;
+    .form-container {
+        max-width: 625px;
+        display: block;
+        margin: auto;
+        .button {
+            height: 48px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

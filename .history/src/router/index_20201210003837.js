@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import ErrorPage from '../views/404.vue'
+import 404 from '../views/404.vue'
 import Home from '../views/Auth/Home.vue'
 
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '*',
-    name: 'ErrorPage',
-    component: ErrorPage,
+    name: '404',
+    component:     name: '404',
 
   },
   {

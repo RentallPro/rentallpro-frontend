@@ -1,0 +1,23 @@
+.home {
+    background: #D3EAF8;
+    background-image: url(../../assets/Patern.svg);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: right;
+    width: 100vw;
+    height: 100vh;
+    .form-container {
+        width: 50%;
+        display: block;
+        margin: auto;
+        .logo {
+            text-align: center;
+        }
+        .form-wrapper {
+            width: 100%;
+            padding: 50px 100px;
+            background: #FFFFFF;
+            border-radius: 10px;
+        }
+    }
+}

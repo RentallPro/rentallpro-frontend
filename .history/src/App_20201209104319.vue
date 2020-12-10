@@ -13,7 +13,4 @@
 #app {
   font-family: 'Work Sans', sans-serif;
 }
-button {
-  cursor: pointer;
-}
 </style>

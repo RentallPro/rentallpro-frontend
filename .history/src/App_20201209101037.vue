@@ -10,10 +10,4 @@
   padding: 0;
   box-sizing: border-box;
 }
-#app {
-  font-family: 'Work Sans', sans-serif;
-}
-button {
-  cursor: pointer;
-}
 </style>
