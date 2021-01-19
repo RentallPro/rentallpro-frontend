@@ -1,6 +1,16 @@
 <template>
   <section class="items">
     <div class="container">
+       <div class="flex-it">
+         <img class="space-it" src="@/assets/Ellipse 44.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+         <img class="space-it" src="@/assets/Ellipse 43.svg" alt="" />
+       </div>
       <div class="row mt-4">
         <div class="col-12 col-sm-8 col-md-6 col-lg-4" v-for="i in 10" :key="i">
           <div class="card border-0 mb-3">
@@ -35,6 +45,12 @@ export default {};
 </script>
 
 <style scoped>
+.flex-it{
+  display: flex;
+}
+.space-it{
+  margin: 10px;
+}
 .card {
   background: #ffffff;
   box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05);
