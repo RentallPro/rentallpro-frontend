@@ -1,6 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light m-auto text-center">
+    <div class="container">
       <a class="navbar-brand" href="#"
         ><img
           src="@/assets/logo.svg"
@@ -18,7 +18,7 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <form class="form-inline mx-5 my-lg-0">
+      <form class="form-inline ml-4 my-lg-0">
         <input
           class="form-control mr-sm-1"
           id="search-input"
@@ -37,30 +37,27 @@
 
       <div
         class="collapse navbar-collapse text-right"
-        id="navbarSupportedContent"
-      >
+        id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="@/assets/heart.png" alt="" /> Favorites</a
-            >
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="@/assets/mail.png" alt="" /> Messages</a
-            >
+            <a class="nav-link mx-2 my-2" href="#"
+              ><img src="@/assets/heart.png" alt="" /> Favorites</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="@/assets/Vector.png" alt="" />Notifications</a
-            >
+            <a class="nav-link mx-2 my-2" href="#"
+              ><img src="@/assets/mail.png" alt="" /> Messages</a>
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><img src="@/assets/Vector4.png" alt="" /> Profile</a
-            >
+            <a class="nav-link m-2" href="#"
+              ><img src="@/assets/Vector.png" alt="" />Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#"
+              ><img src="@/assets/Vector.png" alt="" />History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link m-2" href="#">
+              <img src="@/assets/Vector4.png" alt="" />Profile</a>
           </li>
         </ul>
       </div>
