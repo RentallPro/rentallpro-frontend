@@ -39,25 +39,25 @@
         class="collapse navbar-collapse text-right"
         id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
-          <li class="nav-item">
-            <a class="nav-link mx-2 my-2" href="#"
-              ><img src="@/assets/heart.png" alt="" /> Favorites</a>
+         <li class="nav-item">
+              <router-link class="nav-link mx-2 my-2" to="/onboarding">
+              <img src="@/assets/heart.png" alt="" />Favorites</router-link>
+          </li>
+         <li class="nav-item">
+              <router-link class="nav-link m-2" to="/onboarding">
+              <img src="@/assets/mail.png" alt="" />Messages</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 my-2" href="#"
-              ><img src="@/assets/mail.png" alt="" /> Messages</a>
+              <router-link class="nav-link m-2" to="/onboarding">
+              <img src="@/assets/Vector.png" alt="" />Notifications</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link m-2" href="#"
-              ><img src="@/assets/Vector.png" alt="" />Notifications</a>
+              <router-link class="nav-link m-2" to="/about">
+              <img src="@/assets/Vector.png" alt="" />History</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link m-2" href="#"
-              ><img src="@/assets/Vector.png" alt="" />History</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link m-2" href="#">
-              <img src="@/assets/Vector4.png" alt="" />Profile</a>
+              <router-link class="nav-link m-2" to="/onboarding">
+              <img src="@/assets/Vector4.png" alt="" />Profile</router-link>
           </li>
         </ul>
       </div>

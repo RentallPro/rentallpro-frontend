@@ -3,6 +3,10 @@ import VueRouter from 'vue-router'
 import ErrorPage from '../views/404.vue'
 import Home from '../views/Auth/Home.vue'
 import MarketPlace from '@/views/Marketplace'
+import Onboarding from '@/views/Onboarding'
+import About from '@/views/About'
+
+
 
 Vue.use(VueRouter)
 
@@ -35,12 +39,23 @@ const routes = [
     path: "/",
     name: "market-place",
     component: () => import('@/layout/blank.vue'), // all other routes are stacked here
-    children: [{
+    children: [
+      {
       path: '/market-place',
-      name: 'ResetPassword',
+      name: 'MarketPlace',
       component: MarketPlace
-
-    }]
+    },
+    {
+      path: '/onboarding',
+      name: 'Onboarding',
+      component: Onboarding
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
+    }
+  ]
   },
   {
     path: '*',
