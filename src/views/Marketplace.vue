@@ -1,17 +1,17 @@
 <template>
   <div class="main">
-    <!-- <categories /> -->
+    <categories />
     <products />
   </div>
 </template>
 
 <script>
-// import categories from "@/components/marketplace/categories";
+import categories from "@/components/marketplace/categories";
 import products from "@/components/marketplace/products";
 
 export default {
   components: {
-    // categories,
+    categories,
     products,
   },
 };
