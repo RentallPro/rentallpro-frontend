@@ -4,7 +4,7 @@
       <div class="row mt-4">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3" v-for="i in 12" :key="i">
           <div class="card border-0 mb-3">
-            <img class="card-img" src="@/assets/product.png" alt="Vans" />
+            <img class="card-img" src="@/assets/product.png" alt="Vans"/>
             <div class="card-img-overlay d-flex justify-content-start">
               <a href="#" class="card-link text-danger like">
                 <i class="fas fa-heart"></i>

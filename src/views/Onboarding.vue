@@ -1,20 +1,47 @@
 <template>
-    <div class="bg text-center">
-    <div class="pt-5" style="color: #fff;">
+<div class="bg">
+    <div class="pt-5 text-center" style="color: #fff;">
         <h3>Lend an item</h3>
     </div>
-    <div class="card card-style">
-         <h5 class="pt-5" style="font-weight: 500; width: '205px;">Verify your account</h5>
-         <p class="mx-auto" style="width: 489px;">A statement to inform the user why their account needs to be verified before they can upload items on the platform</p>   
-    </div>
-    </div>
+    <span v-if="this.step === 1">
+    <FirstPage/> 
+    </span>
+    <span v-else-if="this.step === 2">
+    <SecondPage/> 
+    </span>
+    <span v-else-if="this.step === 3">
+    <ThirdPage/> 
+    </span>
+    <div class="btn btn-primary" @click="increment">Click</div>
+</div>
 </template>
 
 
 
 <script>
+import FirstPage from '@/views/FirstPage'
+import SecondPage from '@/views/SecondPage'
+import ThirdPage from '@/views/ThirdPage'
+
 export default {
-    
+    components: {
+    FirstPage,
+    SecondPage,
+    ThirdPage
+  },
+    name: "Onboarding",
+  data() {
+    return {
+      step: 1
+    };
+  },
+
+   methods: {
+    increment() {
+      this.step += 1;
+    },
+
+   }
 }
 </script>
 
@@ -23,14 +50,5 @@ export default {
 .bg{
     background-image: linear-gradient(to bottom right,#80C2EA, #43A6DF);
     height: 100vh;
-}
-.card-style{
-    text-align: center;
-    margin: auto;
-    width: 860px;
-    height: 796px;
-    margin-top: 70px;
-    background: #FFFFFF;
-    border-radius: 10px;
 }
 </style>
